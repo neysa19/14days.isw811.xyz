@@ -17,6 +17,16 @@
                             </div>
                         </div>
                     </div>
+                    <input type="text" name="title" id="title" class="block flex-1 border-0 bg-transparent py-1.5 px-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Shift Leader" required>
+                </div>
+
+                @error('title')
+                    <p class="text-xs text-red-500 font-semibold mt-1">{{ $message }}</p>
+                @enderror
+            </div>
+        </div>
+
+
                     <div class="sm:col-span-4">
                         <label for="salary" class="block text-sm font-medium leading-6 text-gray-900">Salary</label>
                         <div class="mt-2">
